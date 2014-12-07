@@ -273,21 +273,21 @@ module.exports = function (grunt) {
         }]
       }
     },
-    filerev: {
-      options: {
-        length: 4
-      },
-      dist: {
-        files: [{
-          src: [
-            '<%= yeoman.dist %>/js/**/*.js',
-            '<%= yeoman.dist %>/css/**/*.css',
-            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
-            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
-          ]
-        }]
-      }
-    },
+    // filerev: {
+    //   options: {
+    //     length: 4
+    //   },
+    //   dist: {
+    //     files: [{
+    //       src: [
+    //         '<%= yeoman.dist %>/js/**/*.js',
+    //         '<%= yeoman.dist %>/css/**/*.css',
+    //         '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
+    //         '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+    //       ]
+    //     }]
+    //   }
+    // },
     buildcontrol: {
       dist: {
         options: {
