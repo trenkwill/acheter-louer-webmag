@@ -45,6 +45,6 @@ $(document).ready(function(){
   // release the kraken :
   animateTo(); 
   openAddrress();
-  readmore();
+  // readmore();
 
 });

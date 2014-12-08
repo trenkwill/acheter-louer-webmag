@@ -11,16 +11,11 @@
  */
 
 
+// set the font properties
+$inuit-base-font-size:          		14px !default;
+$inuit-base-line-height:        		22px !default;
 
-$inuit-base-font-size:          12px !default;
-$inuit-base-line-height:        22px !default;
-
-/*------------------------------------*\
-    $OBJECTS-AND-ABSTRACTIONS
-\*------------------------------------*/
-
-
-
+// enable all spacings
 $inuit-enable-margins:                  true !default;
 $inuit-enable-margins--tiny:            true !default;
 $inuit-enable-margins--small:           true !default;
@@ -43,47 +38,40 @@ $inuit-enable-paddings--huge:           true !default;
 
 $inuit-enable-paddings--none:           true !default;
 
-
+// enable lists block (cf sommaire)
 $inuit-enable-list-block--small:    	true !default;
-
-$inuit-use-fractions:    				false !default;
-
 $inuit-enable-list-ui--small:   		true !default;
 
+// use .one-half instead of 1/2
+$inuit-use-fractions:    				false !default;
 
-/*------------------------------------*\
-    $OVERRIDES
-\*------------------------------------*/
-// $base-font-size:    18px!default;
-// $base-line-height:  30px!default;
-
-/**
- * Brand stuff
- */
-$brand-color:       #2091C4!default;
-$brand-color2:       #193E7D!default;
-$brand-face:        "Open Sans", sans-serif!default;
-
-$brand-round:        4px!default;
+// enable image float right in media object
+$inuit-enable-media--rev:           	true !default;
 
 
-$lap-start:         569px!default;
+// brand specific variables (change these for each theme)
+$brand-color:       					#2091C4!default;
+$brand-color2:       					#193E7D!default;
+$brand-face:        					"Open Sans", sans-serif!default;
+$brand-round:        					4px!default;
 
-$inuit-use-fractions:    false !default;
+// buttons
+$inuit-enable-btn--pill:    			true !default;
+$inuit-enable-btn--large:   			true !default;
+$inuit-btn-background:      			$brand-color2 !default;
 
+// change media query minimum width for tablets
+$lap-start:         					569px!default;
 
-/*------------------------------------*\
-    $CUSTOM
-\*------------------------------------*/
-//color variables
-$black: #111;
-$white: #fff;
+// color variables
+$black: 								#111;
+$white: 								#fff;
 
-$grey : #999999;
-$grey--light : #DADADA;
-$grey--dark : #444;
+$grey : 								#999999;
+$grey--light : 							#DADADA;
+$grey--dark : 							#444;
 
-$blue: #146CB6;
+$blue: 									#146CB6;
 
 
 

@@ -135,6 +135,7 @@ body{
 }
 .brand-round { border-radius: $brand-round;}
 .brand-color { color: $brand-color;}
+.brand-color-2 { color: $brand-color2;}
 
 .open-mobile-address {
     display: none;
@@ -210,23 +211,32 @@ body{
 // branded blocks
 .brand-block {
     position: relative;
-    height: 260px;
+    @extend .pb;
     @extend .mb;
+    min-height: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+
 }
+
     .brand-block__title {
         position: absolute;
         top: 0;
-        left: $inuit-base-spacing-unit;
+        left: 0;
         padding-left: $inuit-base-spacing-unit--small;
         padding-right: $inuit-base-spacing-unit--small;
         right: 0;
+        text-align: center;
         color: $white;
         background: $brand-color;
+    }
+    .brand-block__text {
+        @extend .mh--;
+        @extend .mt0;
     }
     .brand-block__footer {
         position: absolute;
         bottom: 0;
-        left: $inuit-base-spacing-unit;
+        left: 0;
         padding-left: $inuit-base-spacing-unit--small;
         padding-right: $inuit-base-spacing-unit--small;
         right: 0;
@@ -234,8 +244,6 @@ body{
         background: $brand-color2;
     }
     .brand-block__img { width: 100%;}
-
-
 
 
 .nav { background: $grey--light;}
