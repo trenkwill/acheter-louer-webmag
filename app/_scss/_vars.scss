@@ -12,11 +12,15 @@
 
 
 
-
+$inuit-base-font-size:          12px !default;
+$inuit-base-line-height:        22px !default;
 
 /*------------------------------------*\
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
+
+
+
 $inuit-enable-margins:                  true !default;
 $inuit-enable-margins--tiny:            true !default;
 $inuit-enable-margins--small:           true !default;
@@ -42,7 +46,9 @@ $inuit-enable-paddings--none:           true !default;
 
 $inuit-enable-list-block--small:    	true !default;
 
+$inuit-use-fractions:    				false !default;
 
+$inuit-enable-list-ui--small:   		true !default;
 
 
 /*------------------------------------*\

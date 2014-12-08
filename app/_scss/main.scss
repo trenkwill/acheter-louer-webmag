@@ -18,16 +18,24 @@
 @import "../_bower_components/inuit-spacing/_trumps.spacing.scss";
 
 
-@import "../_bower_components/inuit-widths/_trumps.widths.scss";
-
 @import "../_bower_components/inuit-responsive-settings/_settings.responsive.scss";
 @import "../_bower_components/inuit-responsive-tools/_tools.responsive.scss";
+
+
+
+@import "../_bower_components/inuit-widths/_trumps.widths.scss";
+@import "../_bower_components/inuit-widths-responsive/_trumps.widths-responsive.scss";
 
 @import "../_bower_components/inuit-headings/_base.headings.scss";
 
 @import "../_bower_components/inuit-buttons/_objects.buttons.scss";
 
 @import "../_bower_components/inuit-list-block/_objects.list-block.scss";
+@import "../_bower_components/inuit-list-ui/_objects.list-ui.scss";
+
+
+
+@import "../_bower_components/inuit-page/_base.page.scss";
 
 
 // box model
@@ -36,17 +44,9 @@
 .display-none {display: none;}
 .display-inline-block {display: inline-block;}
 .position-r {position: relative;}
-// .palm-no-padding-lr {@include media-query(palm){padding-left: 0!important; padding-right: 0!important;}}
-// .lap-no-padding {@include media-query(lap){padding-left: 0!important; padding-right: 0!important;}}
-// .palm-no-margin {@include media-query(palm){margin: 0!important;}}
-// .palm-no-margin-lr {@include media-query(palm){margin-left: 0!important; margin-right: 0!important;}}
-// .lap-no-margin {@include media-query(lap){margin-left: 0!important; margin-right: 0!important;}}
-// .palm-img--center {@include media-query(palm){margin: 0 auto; display: block;}}
-// .palm-float--left {@include media-query(palm){float:left !important;}}
-// .lap-float--left {@include media-query(lap){float:left !important;}}
-// .palm-float--right {@include media-query(palm){float:right !important;}}
-// .lap-soft--left {@include media-query(lap){padding-left: 20px!important;}}
-// .palm-clear--both {@include media-query(palm){clear:both !important;}}
+.float--left {float:left;}
+.float--right {float:right;}
+
 
 .palm-clear {@include media-query(palm){clear:both!important;}}
 .overflow--visible{overflow:visible;}
@@ -77,10 +77,14 @@
 
 
 
+
 // text
 h1, h2, h3, h4, h5, h6, p {font-weight: 400;}
 p {}
 a { color: $brand-color; text-decoration: none;}
+.text--center {text-align: center;}
+.weight--semibold {font-weight: 600;}
+
 
 // set font-size for mobile layout
 @include media-query(palm){
@@ -186,7 +190,7 @@ body{
 
 .excerpt {
     height: 103px;
-    @extend .mb0;
+    // @extend .mb0;
 }
 
 
