@@ -13,6 +13,8 @@
     "inuit-list-block": "~0.4.2",
     "inuit-clearfix": "~0.2.1",
     "inuit-page": "~0.2.1",
-    "inuit-list-ui": "~0.4.1"
+    "inuit-list-ui": "~0.4.1",
+    "jquery": "~2.1.1",
+    "readmore": "*"
   }
 }

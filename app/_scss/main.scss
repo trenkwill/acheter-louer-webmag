@@ -38,6 +38,10 @@
 @import "../_bower_components/inuit-page/_base.page.scss";
 
 
+// home made mixins
+
+
+
 // box model
 .margin-auto { margin: 0 auto; }
 .display-block {display: block;}
@@ -188,15 +192,25 @@ body{
     float: right;
 }
 
-.excerpt {
-    height: 103px;
-    // @extend .mb0;
+.excerpt-wrap {
+    position: relative;
 }
+    .readmore-js-toggle {
+        position: absolute;
+        right: 0;
+        width: 20px !important;
+        height: 11px;
+        bottom: 0;
+        background: #fff;
+        line-height: 11px;
+        padding-left: 5px; 
+    }
 
 
 // branded blocks
 .brand-block {
     position: relative;
+    height: 260px;
     @extend .mb;
 }
     .brand-block__title {

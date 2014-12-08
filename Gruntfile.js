@@ -330,10 +330,35 @@ module.exports = function (grunt) {
         'sass:dist',
         'copy:dist'
       ]
+    },
+    bowerInstall: {
+
+      target: {
+
+        // Point to the files that should be updated when
+        // you run `grunt bower-install`
+        src: [
+          'app/**/*.html',   // .html support...
+          'app/styles/main.scss'  // .scss & .sass support...
+        ],
+
+        // Optional:
+        // ---------
+        cwd: '',
+        dependencies: true,
+        devDependencies: false,
+        exclude: [],
+        fileTypes: {},
+        ignorePath: '',
+        overrides: {}
+      }
     }
   });
 
   // Define Tasks
+
+  grunt.loadNpmTasks('grunt-bower-install');
+
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -391,6 +416,8 @@ module.exports = function (grunt) {
     'build',
     'buildcontrol'
     ]);
+
+
 
   grunt.registerTask('default', [
     'check',
