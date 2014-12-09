@@ -15,6 +15,8 @@
     "inuit-page": "~0.2.1",
     "inuit-list-ui": "~0.4.1",
     "jquery": "~2.1.1",
-    "readmore": "*"
+    "readmore": "*",
+    "jquery-mousewheel": "~3.1.12",
+    "jscrollpane": "~2.0.20"
   }
 }
