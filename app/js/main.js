@@ -62,7 +62,7 @@ var Page = (function() {
     itemsCount = $items.length,
     current = 0,
     bb = $( '#bb-bookblock' ).bookblock( {
-      speed : 800,
+      speed : 400,
       perspective : 2000,
       shadowSides : 0.8,
       shadowFlip  : 0.4,
@@ -82,6 +82,7 @@ var Page = (function() {
     $navNext = $( '#bb-nav-next' ),
     $navPrev = $( '#bb-nav-prev' ).hide(),
     $menuItems = $container.find( 'ul.menu > li' ),
+    $goHome = $(".go-home"),
     transEndEventNames = {
       'WebkitTransition': 'webkitTransitionEnd',
       'MozTransition': 'transitionend',
@@ -134,14 +135,21 @@ var Page = (function() {
     // click a menu item
     $menuItems.on( 'click', function() {
 
+      var $el = $( this );
+      var idx = $el.index();
 
-      var $el = $( this ),
-        idx = $el.index(),
-        jump = function() {
-          bb.jump( idx + 1 );
-          console.log(idx);
-        };
+      bb.jump( idx + 1 );
       console.log(idx);
+    
+      return false;
+      
+    } );
+
+    // click a go-home
+    $goHome.on( 'click', function() {
+
+      bb.jump(0);
+      console.log("go home");
     
       return false;
       

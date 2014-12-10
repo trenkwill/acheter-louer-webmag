@@ -50,9 +50,10 @@
 .position-r {position: relative;}
 .float--left {float:left;}
 .float--right {float:right;}
-
+.mb100 {margin-bottom: 100px;}
 
 .palm-clear {@include media-query(palm){clear:both!important;}}
+.palm-pl0 {@include media-query(palm){padding-left:0 !important;}}
 .overflow--visible{overflow:visible;}
 
 .no-border {border:none !important;}
@@ -88,7 +89,7 @@ p {}
 a { color: $brand-color; text-decoration: none;}
 .text--center {text-align: center;}
 .weight--semibold {font-weight: 600;}
-
+.smallprint {font-size: .9em;}
 
 // set font-size for mobile layout
 @include media-query(palm){
@@ -164,7 +165,35 @@ body{
 
 .header {
     background: $grey--light;
+    background: rgba(245, 245, 245, 0.9);
     width: 100%;
+}
+.header__islet {
+    @extend .p-;
+    @extend .float--right;
+
+    @include media-query(palm) {
+        clear:both;
+        float:left;
+    }
+
+    // @include media-query(lap) {
+    //     float: none;
+    //     clear: both;
+    //     width: 39%;
+    //     margin: 0 auto;
+    // }
+}
+.logo {
+    float:left;
+    img {
+        width: 100px;
+    }
+    @include media-query(palm){
+        img {
+            width: 50px;
+        }
+    }
 }
 .adresse {
     @include media-query(palm){
@@ -173,15 +202,32 @@ body{
         // top: 0;
     }
 }
-.logo {
-    float:left;
+.adresse-inner {
+    @extend .mt-;
+    float: left;
     @include media-query(palm){
-        img {
-            height: 50px;
+        margin-top: 0 !important;
+        padding-bottom: 11px;
+    }
+}
+.adresse-inner-2 {
+    @extend .adresse-inner;
+    @extend .ml;
+    @include media-query(palm){
+        margin-left: 0 !important;
+        padding-top: 11px;
+        clear:both;
+        border-top: solid 1px lighten($brand-color, 20);
+    }
+    @include media-query(lap) {
+        .one-half & {
+            display: none;
         }
     }
 }
-.content {}
+.content {
+    
+}
 .content--900 {  @include media-query(lap-and-up){min-height: 900px;} }
 .adresse {font-style: normal;}
 
@@ -192,7 +238,15 @@ body{
 .arrow-right {
     float: right;
 }
-
+.list-ui__item {
+    cursor: pointer;
+    &:hover {
+        background: lighten($grey--light, 10);
+    }
+}
+.click-through {
+    pointer-events: none;
+}
 .excerpt-wrap {
     position: relative;
 }
@@ -213,7 +267,6 @@ body{
     position: relative;
     @extend .pb;
     @extend .mb;
-    min-height: 350px;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
 
 }
@@ -248,13 +301,30 @@ body{
 
 .nav { 
     background: $grey--light;
+    background: rgba(245, 245, 245, 0.9);
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 99999;
+    max-width: 1240px;
+    width: 100%;
+    @include media-query(lap) {
+        left: 0;
+        right: 0;
+    }
 }
 
+
+
+// shame
+.annonces-9 {
+    .brand-block {
+        min-height: 350px;
+    }
+}
+
+.layout__item-6annonces {
+    margin-left: -11px;
+}
 
 @import "_bookblock";
 @import "_jquery.jscrollpane.custom.scss";

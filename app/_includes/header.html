@@ -2,31 +2,33 @@
 	<p class="browsehappy">Vous utilisez un navigateur <strong>dépassé</strong>. Veuillez <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> afin d'améliorer votre expérience sur ce site.</p>
 <![endif]-->
 
-<div class="header  clearfix p-  mb">
-  <div class="logo  mr">
-    <a href="/"><img src="images/laforet/logo.png" width="100" alt="logo" class="float--left"></a>
+<div class="header  clearfix p-  mb  media">
+  <div class="logo  mr  media__img">
+    <a href="/"><img src="images/laforet/logo.png" alt="logo" class="float--left"></a>
   </div>
-  <a href="#" class="open-mobile-address  alpha  float--right">+</a>
-  <address class="adresse   clearfix  float--left">
-    <div class="float--left  mt-  palm-no-margin  ">
+  <!-- <a href="#" class="open-mobile-address  alpha  float--right">+</a> -->
+  <address class="adresse   clearfix  media__body">
+    <div class="adresse-inner">
       <div class="epsilon weight--semibold  brand-color-2">Pau</div>
-      <div class="brand-color-2  hide-palm">4 boulevard Alsace Lorraine</div>
+      <div class="brand-color-2">4 boulevard Alsace Lorraine</div>
        <div class="epsilon weight--semibold"><a href="tel:0559333229" class="brand-color-2">05 59 33 32 29</a></div>
     </div>
-    <div class="float--left  mt-  ml  hide-palm  palm-clear--both  palm-no-margin">
+    {% if include.param == "hide-header-section" %}
+    {% else %}
+    <div class="adresse-inner-2  hide-palm">
        <div class="epsilon weight--semibold  brand-color-2">Pau</div>
-      <div class="brand-color-2  hide-palm">4 boulevard Alsace Lorraine</div>
+      <div class="brand-color-2">4 boulevard Alsace Lorraine</div>
        <div class="epsilon weight--semibold"><a href="tel:0559333229" class="brand-color-2">05 59 33 32 29</a></div>
     </div>
+
+    <div class="header__islet hide-palm one-quarter">
+      <div class="brand-color-2  weight--semibold  text--center ellipsis">Toutes nos annonces sur</div>
+      <a href="#" class="btn  gamma  btn--pill  ellipsis">www.laforet-immobilier-pau.com</a>
+    </div>
+    {% endif %}
   </address>
   
-  {% if include.param == "hide-header-section" %}
-  {% else %}
-  <div class="mt-  islet float--right  palm-clear--both  hide-palm  palm-float--left">
-    <div class="brand-color-2  weight--semibold  text--center">Toutes nos annonces sur</div>
-    <a href="#" class="btn  gamma  btn--pill">www.laforet-immobilier-pau.com</a>
-  </div>
-  {% endif %}
+  
 
 </div>
 
