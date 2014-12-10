@@ -301,16 +301,8 @@ body{
 
 .nav { 
     background: $grey--light;
-    background: rgba(245, 245, 245, 0.9);
-    position: fixed;
-    bottom: 0;
-    z-index: 99999;
     max-width: 1240px;
     width: 100%;
-    @include media-query(lap) {
-        left: 0;
-        right: 0;
-    }
 }
 
 
@@ -325,6 +317,3 @@ body{
 .layout__item-6annonces {
     margin-left: -11px;
 }
-
-@import "_bookblock";
-@import "_jquery.jscrollpane.custom.scss";

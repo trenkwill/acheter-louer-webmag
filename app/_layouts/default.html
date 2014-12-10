@@ -51,104 +51,22 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- endbuild -->
 
-        <script src="js/modernizr.custom.79639.js"></script>
-
     </head>
     <body>
-    
+
        
-      <div id="container" class="container">
-        
-        <div id="bb-bookblock" class="bb-bookblock">
-          
-          <div class="bb-item" id="sommaire">
-            <div class="content">
-              <div class="scroller">
-               {% include index.html %}
-              </div>
-            </div>
-          </div>
-          <div class="bb-item" id="page-simple">
-            <div class="content">
-              <div class="scroller">
-               {% include page-simple.html %}
-              </div>
-            </div>
-          </div>
-          <div class="bb-item" id="9-annonces">
-            <div class="content">
-              <div class="scroller">
-                {% include 9-annonces.html %}
-              </div>
-            </div>
-          </div>
-          <div class="bb-item" id="6-annonces">
-            <div class="content">
-              <div class="scroller">
-                {% include 6-annonces.html %}
-              </div>
-            </div>
-          </div>
-          <div class="bb-item" id="4-annonces">
-            <div class="content">
-              <div class="scroller">
-                {% include 4-annonces.html %}
-              </div>
-            </div>
-          </div>
-          <div class="bb-item" id="2-annonces">
-            <div class="content">
-              <div class="scroller">
-                {% include 2-annonces.html %}
-              </div>
-            </div>
-          </div>
-          <div class="bb-item" id="1-annonce">
-            <div class="content">
-              <div class="scroller">
-                {% include 1-annonce.html %}
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-        <div class="wrapper">
-          <nav class="nav p  clearfix">
-            <a href="/" class="go-homeuppercase  mb0  float--left  zeta" title="Sommaire">sommaire</a>
-            <div class="float--right">
-              <a href="#" id="bb-nav-prev" class="arrow-left  zeta  mr  float--left  grey" title="Page précédente"><</a>
-              <a href="#" id="bb-nav-next" class="arrow-right  zeta  float--left  grey" title="Page suivante">></a>
-            </div>
-          
-          </nav>
-        </div>
-  </div>
+
+          <div class="wrapper">{{ content }}</div>
+
           
        
     <!-- bower:js -->
     <script src="../_bower_components/jquery/dist/jquery.js"></script>
     <script src="../_bower_components/readmore/readmore.js"></script>
-    <script src="../_bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="../_bower_components/jscrollpane/script/jquery.jscrollpane.min.js"></script>
     <!-- endbower -->
     
-
-    <script src="js/jquerypp.custom.js"></script>
-    <script src="js/jquery.bookblock.js"></script>
-
     <!-- build:js(app) /js/scripts.js -->
     <script src="js/main.js"></script>
     <!-- endbuild -->
-    
-    <script>
-      $(function() {
-
-        Page.init();
-
-      });
-    </script>
-
-
     </body>
 </html>
