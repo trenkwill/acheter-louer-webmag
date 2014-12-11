@@ -114,7 +114,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
           src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
+          dest: 'dist/css',
           ext: '.css'
         }]
       },
@@ -252,10 +252,14 @@ module.exports = function (grunt) {
             // Copy moves asset files and directories.
             'images/**/*',
             'fonts/**/*',
+            'css/**/*',
+            'js/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
-            // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
+            '!**/_*{,/**}',
+            '!**/_inuit-*{,/**}',
+            '_bower_components/**/*'
+            // '_bower_components/jquery-mousewheel/jquery.mousewheel.min.js',
+            // '_bower_components/jscrollpane/script/jquery.jscrollpane.min.js'
             //'favicon.ico',
             //'apple-touch*.png'
           ],
@@ -398,16 +402,17 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
-    'useminPrepare',
-    'concat',
-    'autoprefixer:dist',
-    'cssmin',
-    'uglify',
+    'sass:dist',
+    // 'useminPrepare',
+    // 'concat',
+    'autoprefixer:dist'
+    // 'cssmin',
+    // 'uglify',
     // 'imagemin',
-    'svgmin',
-    'filerev',
-    'usemin',
-    'htmlmin'
+    // 'svgmin',
+    // 'filerev',
+    // 'usemin',
+    // 'htmlmin'
     ]);
 
   grunt.registerTask('deploy', [
