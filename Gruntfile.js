@@ -381,7 +381,7 @@ module.exports = function (grunt) {
   // No real tests yet. Add your own.
   grunt.registerTask('test', [
     'clean:server',
-    'concurrent:test',
+    // 'concurrent:test',
     'connect:test'
   ]);
 
