@@ -1,0 +1,14 @@
+{
+  "name": "readmore",
+  "homepage": "https://github.com/jedfoster/Readmore.js",
+  "_release": "40c74c090f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "40c74c090f234a75d33386ab10586c11d901707f"
+  },
+  "_source": "git://github.com/jedfoster/Readmore.js.git",
+  "_target": "*",
+  "_originalSource": "readmore",
+  "_direct": true
+}
