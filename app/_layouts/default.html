@@ -43,15 +43,14 @@
           <meta content="{{ tag }}" property="article:tag">
           {% endfor %}
         {% endif %}
-        <!-- build:css({app,.tmp}) /css/main.css -->
-        <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="css/syntax.css">
-
-        <!-- Custom CSS -->
+        <!-- build:css({app,.tmp}) css/main.css -->
         <link rel="stylesheet" href="css/main.css">
         <!-- endbuild -->
-
+        
+        <!-- build:js(app) js/modernizr.js -->
         <script src="js/modernizr.custom.79639.js"></script>
+        <!-- endbuild -->
+
 
     </head>
     <body>
@@ -117,30 +116,29 @@
           <nav class="nav p  clearfix">
             <a href="/" class="go-homeuppercase  mb0  float--left  zeta" title="Sommaire">sommaire</a>
             <div class="float--right">
-              <a href="#" id="bb-nav-prev" class="arrow-left  zeta  mr  float--left  grey" title="Page précédente"><</a>
-              <a href="#" id="bb-nav-next" class="arrow-right  zeta  float--left  grey" title="Page suivante">></a>
+              <a href="#" id="bb-nav-prev" class="arrow-left  zeta  mr  float--left  grey" title="Page précédente">&lt;</a>
+              <a href="#" id="bb-nav-next" class="arrow-right  zeta  float--left  grey" title="Page suivante">&gt;</a>
             </div>
           
           </nav>
         </div>
   </div>
-          
-       
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>      
+    <!-- build:js(app) js/vendor.js -->
+
     <!-- bower:js -->
-    <script src="../_bower_components/jquery/dist/jquery.js"></script>
     <script src="../_bower_components/readmore/readmore.js"></script>
     <script src="../_bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="../_bower_components/jscrollpane/script/jquery.jscrollpane.min.js"></script>
     <!-- endbower -->
     
-
     <script src="js/jquerypp.custom.js"></script>
     <script src="js/jquery.bookblock.js"></script>
-
-    <!-- build:js(app) /js/scripts.js -->
-    <script src="js/main.js"></script>
     <!-- endbuild -->
-    
+
+    <!-- build:js(app) js/main.js -->
+    <script src="js/main.js"></script>
     <script>
       $(function() {
 
@@ -149,6 +147,7 @@
       });
     </script>
 
+    <!-- endbuild -->
 
     </body>
 </html>

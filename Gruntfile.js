@@ -273,21 +273,21 @@ module.exports = function (grunt) {
         }]
       }
     },
-    // filerev: {
-    //   options: {
-    //     length: 4
-    //   },
-    //   dist: {
-    //     files: [{
-    //       src: [
-    //         '<%= yeoman.dist %>/js/**/*.js',
-    //         '<%= yeoman.dist %>/css/**/*.css',
-    //         '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
-    //         '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
-    //       ]
-    //     }]
-    //   }
-    // },
+    filerev: {
+      options: {
+        length: 4
+      },
+      dist: {
+        files: [{
+          src: [
+            '<%= yeoman.dist %>/js/**/*.js',
+            '<%= yeoman.dist %>/css/**/*.css',
+            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+          ]
+        }]
+      }
+    },
     buildcontrol: {
       dist: {
         options: {
@@ -380,9 +380,9 @@ module.exports = function (grunt) {
 
   // No real tests yet. Add your own.
   grunt.registerTask('test', [
-  //   'clean:server',
-  //   'concurrent:test',
-  //   'connect:test'
+    'clean:server',
+    'concurrent:test',
+    'connect:test'
   ]);
 
   grunt.registerTask('check', [
@@ -402,12 +402,12 @@ module.exports = function (grunt) {
     'concat',
     'autoprefixer:dist',
     'cssmin',
-    'uglify'
+    'uglify',
     // 'imagemin',
-    // 'svgmin',
-    // 'filerev',
-    // 'usemin'
-    // 'htmlmin'
+    'svgmin',
+    'filerev',
+    'usemin',
+    'htmlmin'
     ]);
 
   grunt.registerTask('deploy', [
