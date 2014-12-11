@@ -1,0 +1,54 @@
+<div class="nav p  mt  clearfix">
+	<a href="#" class="go-home  uppercase  mb0  float--left  zeta" title="Sommaire">sommaire</a>
+	<div class="float--right">
+		<a href="{% if include.param == "simple" %}
+		1-annonce.html
+		{% elsif include.param == "9-annonces" %}
+		2-annonces.html
+		{% elsif include.param == "6-annonces" %}
+		4-annonces.html
+		{% elsif include.param == "4-annonces" %}
+		6-annonces.html
+		{% elsif include.param == "2-annonces" %}
+		9-annonces.html
+		{% elsif include.param == "1-annonce" %}
+		index.html
+		{% endif %}
+		" class="arrow-left  zeta  mr  float--left  grey" title="{% if include.param == "simple" %}
+		1-annonce.html
+		{% elsif include.param == "9-annonces" %}
+		2-annonces.html
+		{% elsif include.param == "6-annonces" %}
+		4-annonces.html
+		{% elsif include.param == "4-annonces" %}
+		6-annonces.html
+		{% elsif include.param == "2-annonces" %}
+		9-annonces.html
+		{% endif %}"><</a>
+		<a href="
+		{% if include.param == "simple" %}
+		9-annonces.html
+		{% elsif include.param == "9-annonces" %}
+		6-annonces.html
+		{% elsif include.param == "6-annonces" %}
+		4-annonces.html
+		{% elsif include.param == "4-annonces" %}
+		2-annonces.html
+		{% elsif include.param == "2-annonces" %}
+		1-annonce.html
+		{% elsif include.param == "1-annonce" %}
+		index.html
+		{% endif %}" class="arrow-right  zeta  float--left  grey" title="{% if include.param == "simple" %}
+		1-annonce.html
+		{% elsif include.param == "9-annonces" %}
+		2-annonces.html
+		{% elsif include.param == "6-annonces" %}
+		4-annonces.html
+		{% elsif include.param == "4-annonces" %}
+		6-annonces.html
+		{% elsif include.param == "2-annonces" %}
+		9-annonces.html
+		{% endif %}">></a>
+	</div>
+
+</div>
