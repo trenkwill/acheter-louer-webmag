@@ -255,9 +255,9 @@ module.exports = function (grunt) {
             'css/**/*',
             'js/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}',
-            '!**/_inuit-*{,/**}',
-            '_bower_components/**/*'
+            '!**/_*{,/**}'
+            // '!**/_inuit-*{,/**}',
+            // '_bower_components/**/*'
             // '_bower_components/jquery-mousewheel/jquery.mousewheel.min.js',
             // '_bower_components/jscrollpane/script/jquery.jscrollpane.min.js'
             //'favicon.ico',
