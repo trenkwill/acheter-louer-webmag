@@ -148,7 +148,7 @@ var Page = (function() {
     // click a go-home
     $goHome.on( 'click', function() {
 
-      bb.jump(1);
+      bb.jump(2);
       console.log("go home");
     
       return false;
