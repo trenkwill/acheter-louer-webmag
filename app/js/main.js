@@ -42,13 +42,21 @@ $(document).ready(function(){
     });
   }
 
-
+  function removeTargetBlankMobile() {
+    $(function(){
+      var windowWidth = $(window).width();
+      if (windowWidth < 768) {
+        $('a[target="_blank"]').removeAttr('target');
+      };
+    });
+  }
 
   
 
   // release the kraken :
   animateTo(); 
   openAddrress();
+  removeTargetBlankMobile();
   // readmore();
 
 });
