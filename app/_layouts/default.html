@@ -55,15 +55,24 @@
     </head>
     <body>
     
+    <!-- All the 'flip' pages are in _includes/à
+    The ones at the root, are the 'none flipped' pages-->
        
       <div id="container" class="container">
         
         <div id="bb-bookblock" class="bb-bookblock">
           
-          <div class="bb-item" id="sommaire">
+          <div class="bb-item" id="couverture">
             <div class="content">
               <div class="scroller">
                {% include index.html %}
+              </div>
+            </div>
+          </div>
+          <div class="bb-item" id="sommaire">
+            <div class="content">
+              <div class="scroller">
+               {% include sommaire.html %}
               </div>
             </div>
           </div>
