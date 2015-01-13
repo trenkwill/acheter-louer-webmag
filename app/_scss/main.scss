@@ -286,7 +286,7 @@ body{
 @-webkit-keyframes pulsate {
     0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.8, 1.8); opacity: 0.0;}
+    100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0;}
 }
 .next-page-pulse {
     $size: 120px;
@@ -305,7 +305,10 @@ body{
     margin-top: -$size/2;
     -webkit-animation: pulsate 2s ease-out;
     -webkit-animation-iteration-count: infinite; 
-    opacity: 0.0
+    opacity: 0.0;
+    @include media-query(palm){
+         right: -$size/2;
+    }
 }
 .next-page {
     $size: 120px;
@@ -323,6 +326,9 @@ body{
     right: -$size/3;
     margin-top: -$size/2;
     transform: rotate(-45deg);
+    @include media-query(palm){
+         right: -$size/2;
+    }
 }
 
 // branded blocks
