@@ -2594,4 +2594,7 @@ body {
 * html .jspCorner {
   margin: 0 -3px 0 0; }
 
+.jspPane {
+  bottom: 0; }
+
 /*# sourceMappingURL=main.css.map */
