@@ -455,6 +455,9 @@ body{
 @import "_bookblock";
 @import "_jquery.jscrollpane.custom.scss";
 
+.jspPane {
+    bottom: 0;
+}
 
 // .jspContainer {
 // overflow: scroll !important;
