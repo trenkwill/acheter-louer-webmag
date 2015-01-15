@@ -122,6 +122,10 @@ a { color: $brand-color; text-decoration: none;}
     text-overflow: ellipsis;
 }
 
+html {
+    background: #eee;
+}
+
 body{
     background: $white;
     font-family: $brand-face;
@@ -157,20 +161,35 @@ body{
 .wrapper {
     max-width:1280px;
     margin: 0 auto;
-    padding: 0 20px;
+    background: $white;
+    // padding: 0 20px 20px 20px;
+    position: relative;
+    bottom: 3px;
+    @extend .pb;
+    border-left: solid 1px $grey--light;
+    border-right: solid 1px $grey--light;
+    border-bottom: solid 1px $grey--light;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
     @include media-query(palm){
         padding: 0 10px;
     }
 }
 
+.bb-item {
+    background: #eee !important;
+}
+
+.container {
+    
+}
 
 .cover {
     position: relative;
-    border: solid 1px #eee;
+    // border: solid 1px #eee;
     overflow: hidden;
-    @extend .mv;
+    // @extend .mv;
     @extend .p;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    // box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
     .cover--logo {
@@ -198,6 +217,8 @@ body{
     @include media-query(palm) {
         clear:both;
         float:left;
+        width: 100% !important;
+        padding-left: 0 !important;
     }
 
     // @include media-query(lap) {
@@ -223,6 +244,8 @@ body{
         // position: absolute;
         // right: 0;
         // top: 0;
+        line-height: 1;
+        padding: 0;
     }
 }
 .adresse-inner {
@@ -230,7 +253,6 @@ body{
     float: left;
     @include media-query(palm){
         margin-top: 0 !important;
-        padding-bottom: 11px;
     }
 }
 .adresse-inner-2 {
@@ -240,7 +262,6 @@ body{
         margin-left: 0 !important;
         padding-top: 11px;
         clear:both;
-        border-top: solid 1px lighten($brand-color, 20);
     }
     @include media-query(lap) {
         .one-half & {
@@ -360,6 +381,8 @@ body{
     .brand-block__text {
         @extend .mh--;
         @extend .mt0;
+        font-size: 12px;
+        line-height: 1.5;
     }
     .brand-block__footer {
         position: absolute;
@@ -371,6 +394,13 @@ body{
         color: $white;
         background: $brand-color2;
     }
+        .brand-block__ref {
+            font-size: 0.8em;
+            line-height: 2;
+        }
+        .brand-block__price {
+            font-size: 1.1em;
+        }
     .brand-block__img { width: 100%;}
 
 
@@ -379,12 +409,33 @@ body{
     background: rgba(245, 245, 245, 0.9);
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 99999;
-    max-width: 1240px;
+    border-top: solid 2px $brand-color;
     width: 100%;
-    @include media-query(lap) {
-        left: 0;
-        right: 0;
+    @extend .p;
+    box-shadow: 0 0 3px rgba(0,0,0,.5), inset 0 1px 1px #fff;
+    @include media-query(palm) {
+        padding: $inuit-base-spacing-unit--small !important;
+    }
+    .arrow-right span, .arrow-left span {
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        transform: scale(1, 2);
+    }
+    .arrow-right, .arrow-left {
+        $size: 30px;
+        transform: scale(1, 1);
+        background: $brand-color;
+        color: #fff;
+        height: $size;
+        width: $size;
+        border-radius: $size;
+        &:hover {
+            background: darken($brand-color, 5%);
+        }
     }
 }
 
@@ -405,13 +456,13 @@ body{
 @import "_jquery.jscrollpane.custom.scss";
 
 
-.jspContainer {
-overflow: hidden !important;
-position: absolute !important;
-top: 0 !important;
-bottom: 0 !important;
-left:0 !important;
-right: 0 !important;
-width: 100% !important;
-height: 100% !important;
-}
+// .jspContainer {
+// overflow: scroll !important;
+// position: absolute !important;
+// top: 0 !important;
+// bottom: 0 !important;
+// left:0 !important;
+// right: 0 !important;
+// width: 100% !important;
+// height: 100% !important;
+// }
