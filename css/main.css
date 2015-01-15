@@ -538,7 +538,7 @@ html {
   margin-right: 22px !important;
   margin-left: 22px !important; }
 
-.mv, .cover {
+.mv {
   margin-top: 22px !important;
   margin-bottom: 22px !important; }
 
@@ -807,7 +807,7 @@ html {
  *
  * Add paddings.
  */
-.p, .cover {
+.p, .cover, .nav {
   padding: 22px !important; }
 
 .pt {
@@ -816,7 +816,7 @@ html {
 .pr {
   padding-right: 22px !important; }
 
-.pb, .brand-block {
+.pb, .wrapper, .brand-block {
   padding-bottom: 22px !important; }
 
 .pl {
@@ -2170,6 +2170,9 @@ a {
   width: 100%;
   text-overflow: ellipsis; }
 
+html {
+  background: #eee; }
+
 body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
@@ -2209,16 +2212,23 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px; }
+  background: #fff;
+  position: relative;
+  bottom: 3px;
+  border-left: solid 1px #DADADA;
+  border-right: solid 1px #DADADA;
+  border-bottom: solid 1px #DADADA;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 719px) {
     .wrapper {
       padding: 0 10px; } }
 
+.bb-item {
+  background: #eee !important; }
+
 .cover {
   position: relative;
-  border: solid 1px #eee;
-  overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  overflow: hidden; }
 
 .cover--logo img {
   display: block;
@@ -2236,7 +2246,9 @@ body {
 @media screen and (max-width: 719px) {
   .header__islet {
     clear: both;
-    float: left; } }
+    float: left;
+    width: 100% !important;
+    padding-left: 0 !important; } }
 
 .logo {
   float: left; }
@@ -2246,19 +2258,22 @@ body {
     .logo img {
       width: 50px; } }
 
+@media screen and (max-width: 719px) {
+  .adresse {
+    line-height: 1;
+    padding: 0; } }
+
 .adresse-inner, .adresse-inner-2 {
   float: left; }
   @media screen and (max-width: 719px) {
     .adresse-inner, .adresse-inner-2 {
-      margin-top: 0 !important;
-      padding-bottom: 11px; } }
+      margin-top: 0 !important; } }
 
 @media screen and (max-width: 719px) {
   .adresse-inner-2 {
     margin-left: 0 !important;
     padding-top: 11px;
-    clear: both;
-    border-top: solid 1px #64bde6; } }
+    clear: both; } }
 @media screen and (min-width: 720px) and (max-width: 1023px) {
   .one-half .adresse-inner-2 {
     display: none; } }
@@ -2370,6 +2385,10 @@ body {
   color: #fff;
   background: #2091C4; }
 
+.brand-block__text {
+  font-size: 12px;
+  line-height: 1.5; }
+
 .brand-block__footer {
   position: absolute;
   bottom: 0;
@@ -2380,6 +2399,13 @@ body {
   color: #fff;
   background: #193E7D; }
 
+.brand-block__ref {
+  font-size: 0.8em;
+  line-height: 2; }
+
+.brand-block__price {
+  font-size: 1.1em; }
+
 .brand-block__img {
   width: 100%; }
 
@@ -2388,13 +2414,31 @@ body {
   background: rgba(245, 245, 245, 0.9);
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 99999;
-  max-width: 1240px;
-  width: 100%; }
-  @media screen and (min-width: 720px) and (max-width: 1023px) {
+  border-top: solid 2px #2091C4;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), inset 0 1px 1px #fff; }
+  @media screen and (max-width: 719px) {
     .nav {
-      left: 0;
-      right: 0; } }
+      padding: 11px !important; } }
+  .nav .arrow-right span, .nav .arrow-left span {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    -webkit-transform: scale(1, 2);
+    transform: scale(1, 2); }
+  .nav .arrow-right, .nav .arrow-left {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background: #2091C4;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px; }
+    .nav .arrow-right:hover, .nav .arrow-left:hover {
+      background: #1c81ae; }
 
 .annonces-9 .brand-block {
   min-height: 350px; }
@@ -2549,15 +2593,5 @@ body {
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
 * html .jspCorner {
   margin: 0 -3px 0 0; }
-
-.jspContainer {
-  overflow: hidden !important;
-  position: absolute !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  height: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */
