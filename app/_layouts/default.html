@@ -53,7 +53,31 @@
         <!-- build:js(app) js/modernizr.js -->
         <script src="js/modernizr.custom.79639.js"></script>
         <!-- endbuild -->
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>      
+        <!-- build:js(app) js/vendor.js -->
 
+        <!-- bower:js -->
+        <script src="js/readmore.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <!-- endbower -->
+        
+        <script src="js/jquerypp.custom.js"></script>
+        <script src="js/jquery.bookblock.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(app) js/main.js -->
+        <script src="js/main.js"></script>
+        <script>
+          $(function() {
+
+            Page.init();
+
+          });
+        </script>
+
+        <!-- endbuild -->
 
     </head>
     <body>
@@ -136,30 +160,7 @@
         </div>
   </div>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>      
-    <!-- build:js(app) js/vendor.js -->
-
-    <!-- bower:js -->
-    <script src="js/readmore.min.js"></script>
-    <script src="js/jquery.mousewheel.min.js"></script>
-    <script src="js/jquery.jscrollpane.min.js"></script>
-    <!-- endbower -->
     
-    <script src="js/jquerypp.custom.js"></script>
-    <script src="js/jquery.bookblock.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:js(app) js/main.js -->
-    <script src="js/main.js"></script>
-    <script>
-      $(function() {
-
-        Page.init();
-
-      });
-    </script>
-
-    <!-- endbuild -->
 
     </body>
 </html>
