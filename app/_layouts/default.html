@@ -157,6 +157,17 @@
         Page.init();
 
       });
+      $(function(){
+        var windowHeight = $(window).height(),
+            jspContainer = $(".jspContainer");
+
+        jspContainer.height(windowHeight);
+        
+        $(window).resize(function(){
+            jspContainer.height(windowHeight);
+        });
+
+      }); 
     </script>
 
     <!-- endbuild -->
