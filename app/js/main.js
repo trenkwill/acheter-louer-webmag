@@ -51,10 +51,26 @@ $(document).ready(function(){
     });
   }
 
+
+  function fixJspContainerHeight() {
+    $(function(){
+      var windowHeight = $(window).height(),
+          jspContainer = $(".jspContainer");
+
+      jspContainer.height(windowHeight);
+      
+      $(window).resize(function(){
+          jspContainer.height(windowHeight);
+      });
+
+    }); 
+  }
+
   
 
   // release the kraken :
-  animateTo(); 
+  fixJspContainerHeight();
+  animateTo();
   openAddrress();
   removeTargetBlankMobile();
   // readmore();
