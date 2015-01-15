@@ -307,7 +307,9 @@ body{
     -webkit-animation-iteration-count: infinite; 
     opacity: 0.0;
     @include media-query(palm){
-         right: -$size/2;
+         width: $size/2;
+         height: $size/2;
+         right: -10px;
     }
 }
 .next-page {
@@ -327,7 +329,11 @@ body{
     margin-top: -$size/2;
     transform: rotate(-45deg);
     @include media-query(palm){
-         right: -$size/2;
+         width: $size/2;
+         height: $size/2;
+         font-size: 0.8em;
+         right: -10px;
+         line-height: $size/2;
     }
 }
 
@@ -397,3 +403,15 @@ body{
 
 @import "_bookblock";
 @import "_jquery.jscrollpane.custom.scss";
+
+
+.jspContainer {
+overflow: hidden !important;
+position: absolute !important;
+top: 0 !important;
+bottom: 0 !important;
+left:0 !important;
+right: 0 !important;
+width: 100% !important;
+height: 100% !important;
+}

@@ -69,7 +69,7 @@ $(document).ready(function(){
   
 
   // release the kraken :
-  fixJspContainerHeight();
+
   animateTo();
   openAddrress();
   removeTargetBlankMobile();
@@ -254,3 +254,6 @@ var Page = (function() {
   return { init : init };
 
 })();
+
+
+fixJspContainerHeight();
