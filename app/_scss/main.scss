@@ -162,6 +162,7 @@ body{
     max-width:1280px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow: hidden;
     background: $white;
     // padding: 0 20px 20px 20px;
     position: relative;
@@ -186,11 +187,7 @@ body{
 
 .cover {
     position: relative;
-    // border: solid 1px #eee;
-    overflow: hidden;
-    // @extend .mv;
     @extend .p;
-    // box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
     .cover--logo {
