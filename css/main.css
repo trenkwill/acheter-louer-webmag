@@ -2327,7 +2327,9 @@ body {
   opacity: 0.0; }
   @media screen and (max-width: 719px) {
     .next-page-pulse {
-      right: -60px; } }
+      width: 60px;
+      height: 60px;
+      right: -10px; } }
 
 .next-page {
   line-height: 120px;
@@ -2347,7 +2349,11 @@ body {
   transform: rotate(-45deg); }
   @media screen and (max-width: 719px) {
     .next-page {
-      right: -60px; } }
+      width: 60px;
+      height: 60px;
+      font-size: 0.8em;
+      right: -10px;
+      line-height: 60px; } }
 
 .brand-block {
   position: relative;
@@ -2543,5 +2549,15 @@ body {
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
 * html .jspCorner {
   margin: 0 -3px 0 0; }
+
+.jspContainer {
+  overflow: hidden !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */
