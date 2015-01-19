@@ -2428,6 +2428,10 @@ body {
     position: absolute;
     right: 20px;
     top: 20px; }
+    @media screen and (max-width: 719px) {
+      .nav .nav-arrows {
+        right: 10px;
+        top: 5px; } }
   .nav .arrow-right span, .nav .arrow-left span {
     display: block;
     text-align: center;
@@ -2447,6 +2451,9 @@ body {
 
 .dots {
   list-style: none; }
+  @media screen and (max-width: 719px) {
+    .dots {
+      display: none; } }
 
 .dot {
   width: 20px;
