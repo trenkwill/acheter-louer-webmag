@@ -421,6 +421,10 @@ body{
         position: absolute;
         right:20px;
         top: 20px;
+        @include media-query(palm) {
+            right:10px;
+            top: 5px;
+        }
     }
     .arrow-right span, .arrow-left span {
         display: block;
@@ -447,6 +451,9 @@ body{
     @extend .m0;
     @extend .p0;
     list-style: none;
+    @include media-query(palm) {
+        display: none;
+    }
 }
     .dot {
         $size: 20px;
