@@ -417,6 +417,11 @@ body{
     @include media-query(palm) {
         padding: $inuit-base-spacing-unit--small !important;
     }
+    .nav-arrows {
+        position: absolute;
+        right:20px;
+        top: 20px;
+    }
     .arrow-right span, .arrow-left span {
         display: block;
         text-align: center;
@@ -437,7 +442,24 @@ body{
     }
 }
 
-
+.dots {
+    @extend .text--center;
+    @extend .m0;
+    @extend .p0;
+    list-style: none;
+}
+    .dot {
+        $size: 20px;
+        width: $size;
+        height: $size;
+        display: inline-block;
+        border-radius: $size;
+        background: #ccc;
+        cursor: pointer;
+        &.dot--selected {
+            background: $brand-color;
+        }
+    }
 
 // shame
 .annonces-9 {
