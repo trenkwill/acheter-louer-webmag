@@ -649,7 +649,7 @@ html {
 /**
  * Remove margins.
  */
-.m0 {
+.m0, .dots {
   margin: 0 !important; }
 
 .mt0, .brand-block__text {
@@ -937,7 +937,7 @@ html {
 /**
  * Remove paddings.
  */
-.p0 {
+.p0, .dots {
   padding: 0 !important; }
 
 .pt0 {
@@ -2116,7 +2116,7 @@ a {
   color: #2091C4;
   text-decoration: none; }
 
-.text--center {
+.text--center, .dots {
   text-align: center; }
 
 .weight--semibold {
@@ -2424,6 +2424,10 @@ body {
   @media screen and (max-width: 719px) {
     .nav {
       padding: 11px !important; } }
+  .nav .nav-arrows {
+    position: absolute;
+    right: 20px;
+    top: 20px; }
   .nav .arrow-right span, .nav .arrow-left span {
     display: block;
     text-align: center;
@@ -2440,6 +2444,19 @@ body {
     border-radius: 30px; }
     .nav .arrow-right:hover, .nav .arrow-left:hover {
       background: #1c81ae; }
+
+.dots {
+  list-style: none; }
+
+.dot {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  background: #ccc;
+  cursor: pointer; }
+  .dot.dot--selected {
+    background: #2091C4; }
 
 .annonces-9 .brand-block {
   min-height: 350px; }

@@ -89,6 +89,11 @@ var Page = (function() {
 
       bb.jump( idx + 1 );
       console.log(idx);
+
+      if ($el.hasClass("dot")) {
+        $(".dot").removeClass("dot--selected");
+        $el.addClass("dot--selected");
+      };
     
       return false;
       
@@ -144,6 +149,8 @@ var Page = (function() {
       $navNext.show();
       $navPrev.show();
     }
+
+
 
   }
 
@@ -246,6 +253,17 @@ $(document).ready(function(){
     }); 
   }
 
+
+  function showCurrent() {
+    $(function(){
+      var dot = $(".dot");
+      dot.click(function(){
+        $(this).removeClass("dot--selected");
+        $(this).toggleClass("dot--selected");
+      });
+    });
+  }
+
   
 
   // release the kraken :
@@ -254,6 +272,7 @@ $(document).ready(function(){
   openAddrress();
   removeTargetBlankMobile();
   containerHeight();
+  // showCurrent();
   // readmore();
 
 });
