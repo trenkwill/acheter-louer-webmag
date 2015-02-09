@@ -17,6 +17,13 @@
     "jquery": "~2.1.1",
     "readmore": "*",
     "jquery-mousewheel": "~3.1.12",
-    "jscrollpane": "~2.0.20"
+    "jscrollpane": "~2.0.20",
+    "inuit-box-sizing": "~0.2.0",
+    "inuit-defaults": "~0.2.1",
+    "inuit-functions": "~0.2.0",
+    "inuit-mixins": "~0.2.3",
+    "inuit-normalize": "~3.0.2",
+    "inuit-responsive-settings": "~0.1.4",
+    "modernizr": "~2.8.3"
   }
 }
