@@ -1116,7 +1116,7 @@ html {
 /**
  * Responsive width classes based on your responsive settings.
  */
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   /**
    * Whole.
    */
@@ -1257,7 +1257,7 @@ html {
 
   .palm-eleven-twelfths {
     width: 91.6666666% !important; } }
-@media screen and (min-width: 720px) and (max-width: 1023px) {
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
   /**
    * Whole.
    */
@@ -1398,7 +1398,7 @@ html {
 
   .lap-eleven-twelfths {
     width: 91.6666666% !important; } }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 45em) {
   /**
    * Whole.
    */
@@ -1539,7 +1539,7 @@ html {
 
   .lap-and-up-eleven-twelfths {
     width: 91.6666666% !important; } }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 63.9375em) {
   /**
    * Whole.
    */
@@ -1680,7 +1680,7 @@ html {
 
   .portable-eleven-twelfths {
     width: 91.6666666% !important; } }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   /**
    * Whole.
    */
@@ -2044,11 +2044,11 @@ html {
 .mb100 {
   margin-bottom: 100px; }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   .palm-clear {
     clear: both !important; } }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   .palm-pl0 {
     padding-left: 0 !important; } }
 
@@ -2125,7 +2125,7 @@ a {
 .smallprint {
   font-size: .9em; }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   h1, .alpha--mobile {
     font-size: 30px;
     font-size: 2.14286rem;
@@ -2197,11 +2197,11 @@ body {
 
 .open-mobile-address {
   display: none; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .open-mobile-address {
       display: block; } }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   .hide-palm {
     display: none; } }
 
@@ -2221,7 +2221,7 @@ body {
   border-right: solid 1px #DADADA;
   border-bottom: solid 1px #DADADA;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .wrapper {
       padding: 0 10px; } }
 
@@ -2244,7 +2244,7 @@ body {
   background: rgba(245, 245, 245, 0.9);
   width: 100%; }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   .header__islet {
     clear: both;
     float: left;
@@ -2255,31 +2255,31 @@ body {
   float: left; }
   .logo img {
     width: 100px; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .logo img {
       width: 50px; } }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   .adresse {
     line-height: 1;
     padding: 0; } }
 
 .adresse-inner, .adresse-inner-2 {
   float: left; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .adresse-inner, .adresse-inner-2 {
       margin-top: 0 !important; } }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 44.9375em) {
   .adresse-inner-2 {
     margin-left: 0 !important;
     padding-top: 11px;
     clear: both; } }
-@media screen and (min-width: 720px) and (max-width: 1023px) {
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
   .one-half .adresse-inner-2 {
     display: none; } }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 45em) {
   .content--900 {
     min-height: 900px; } }
 
@@ -2341,7 +2341,7 @@ body {
   -webkit-animation: pulsate 2s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 0.0; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .next-page-pulse {
       width: 60px;
       height: 60px;
@@ -2363,7 +2363,7 @@ body {
   margin-top: -60px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .next-page {
       width: 60px;
       height: 60px;
@@ -2421,14 +2421,14 @@ body {
   border-top: solid 2px #2091C4;
   width: 100%;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), inset 0 1px 1px #fff; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .nav {
       padding: 11px !important; } }
   .nav .nav-arrows {
     position: absolute;
     right: 20px;
     top: 20px; }
-    @media screen and (max-width: 719px) {
+    @media screen and (max-width: 44.9375em) {
       .nav .nav-arrows {
         right: 10px;
         top: 5px; } }
@@ -2451,7 +2451,7 @@ body {
 
 .dots {
   list-style: none; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 44.9375em) {
     .dots {
       display: none; } }
 
