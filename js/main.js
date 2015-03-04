@@ -214,7 +214,8 @@ $(document).ready(function(){
   function openAddrress() {
     $(".open-mobile-address").click(function(){
 
-      $(".header .hide-palm").toggle();
+      $(".header .show-mobile").toggle();
+      $(".header .adresse-inner-2").show();
     });
   }
 
