@@ -55,11 +55,13 @@ var Page = (function() {
     // add navigation events
     $navNext.on( 'click', function() {
       bb.next();
+      $(".dot--selected").removeClass("dot--selected").next().addClass("dot--selected");
       return false;
     } );
 
     $navPrev.on( 'click', function() {
       bb.prev();
+      $(".dot--selected").removeClass("dot--selected").prev().addClass("dot--selected");
       return false;
     } );
     
