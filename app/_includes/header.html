@@ -8,24 +8,27 @@
   </div>
   <a href="#" class="open-mobile-address  alpha  float--right" title="Ouvrir Menu">+</a>
   <address class="adresse   clearfix  media__body">
-    <div class="adresse-inner">
+    <div class="adresse-inner  four-ninths">
       <div class="epsilon weight--semibold  brand-color-2">Pau</div>
       <div class="brand-color-2">4 boulevard Alsace Lorraine</div>
        <div class="epsilon weight--semibold"><a href="tel:0559333229" class="brand-color-2">05 59 33 32 29</a></div>
     </div>
+    <div class="show-mobile">
     {% if include.param == "hide-header-section" %}
-    {% else %}
-    <div class="adresse-inner-2  hide-palm">
+    <div class="adresse-inner-2  hide-palm  one-half">
        <div class="epsilon weight--semibold  brand-color-2">Pau</div>
       <div class="brand-color-2">4 boulevard Alsace Lorraine</div>
        <div class="epsilon weight--semibold"><a href="tel:0559333229" class="brand-color-2">05 59 33 32 29</a></div>
     </div>
+    {% endif %}
+    {% if include.param2 == "show-call-to-action" %}
 
-    <div class="header__islet hide-palm one-quarter">
+    <div class="header__islet hide-palm one-half">
       <div class="brand-color-2  weight--semibold ellipsis mb--">Toutes nos annonces sur</div>
       <a href="#" class="btn  gamma  btn--pill  ellipsis" title="Se rendre sur www.laforet-immobilier-pau.com">www.laforet-immobilier-pau.com</a>
     </div>
     {% endif %}
+    </div>
   </address>
   
   

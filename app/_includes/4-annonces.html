@@ -1,9 +1,10 @@
 <div class="wrapper">
   <div class="display-block  margin-auto  mb100">
     <div class="layout">
+      <!-- to hide the address section add this param to the include header : param="hide-header-section"  -->
+      <div class="layout__item one-half palm-one-whole  show-cta-palm">{% include header.html param="hide-header-section" param2="show-call-to-action" %}</div><!--
+      --><div class="layout__item one-half hide-palm  hide-address-lap">{% include header.html param2="show-call-to-action" %}</div>
       <div class="layout__item one-half    palm-one-whole">
-          <!-- to hide the address section add this param to the include header : param="hide-header-section"  -->
-          {% include header.html  %}
             <div class="content  layout">
               <a href="http://www.acheter-louer.fr/perl/annonces/searchfiche_xml.pl?webmag=/bookflash/ouestparisien/&techno=flashbook&idannonce=29454746&idagence=1613" target="_blank" class="layout__item  black  one-half">
                 <div class="brand-block">
