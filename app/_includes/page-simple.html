@@ -1,5 +1,7 @@
 <div class="wrapper">
-	{% include header.html %}
+	<!-- to hide the address section add this param to the include header : param="hide-header-section"  -->
+	<div class="layout__item one-half palm-one-whole  show-cta-palm">{% include header.html param="hide-header-section" param2="show-call-to-action" %}</div><!--
+	--><div class="layout__item one-half hide-palm  hide-address-lap">{% include header.html param2="show-call-to-action" %}</div>
 
 	<div class="display-block two-thirds  margin-auto  palm-one-whole  mb++">
 		<p class="date  uppercase  grey  push-half--bottom">Présentation</p>
